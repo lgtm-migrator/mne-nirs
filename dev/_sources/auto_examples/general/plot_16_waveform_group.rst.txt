@@ -343,7 +343,7 @@ as illustrated by the head inset in the top right corner of the figure.
  .. code-block:: none
 
 
-    <matplotlib.legend.Legend object at 0x7f1c3ace5d60>
+    <matplotlib.legend.Legend object at 0x7f3e18799340>
 
 
 
@@ -459,7 +459,7 @@ regions of the brain for each condition.
  .. code-block:: none
 
 
-    <matplotlib.legend.Legend object at 0x7f1b7426d100>
+    <matplotlib.legend.Legend object at 0x7f3f0f5ace50>
 
 
 
@@ -632,7 +632,7 @@ single ROI between conditions.
  .. code-block:: none
 
 
-    <seaborn.axisgrid.FacetGrid object at 0x7f1c3e11bf40>
+    <seaborn.axisgrid.FacetGrid object at 0x7f3f0f5acb80>
 
 
 
@@ -805,7 +805,7 @@ hand that is tapping.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.957 seconds)
+   **Total running time of the script:** ( 0 minutes  10.162 seconds)
 
 **Estimated memory usage:**  9 MB
 

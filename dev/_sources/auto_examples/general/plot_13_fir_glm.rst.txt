@@ -587,7 +587,7 @@ per chromophore (HbR not shown in first two facets).
  .. code-block:: none
 
 
-    <matplotlib.legend.Legend object at 0x7f1b544e7490>
+    <matplotlib.legend.Legend object at 0x7f3ee878bc40>
 
 
 
@@ -654,7 +654,7 @@ Plot the response with confidence intervals
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.058 seconds)
+   **Total running time of the script:** ( 0 minutes  14.766 seconds)
 
 **Estimated memory usage:**  10 MB
 
