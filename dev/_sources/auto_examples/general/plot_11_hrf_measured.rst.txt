@@ -129,8 +129,6 @@ to meet github memory constraints.
 
  .. code-block:: none
 
-    Using default location ~/mne_data for fnirs_motor...
-      0%|                                              | 0.00/17.9M [00:00<?, ?B/s]     31%|███████████▍                         | 5.51M/17.9M [00:00<00:00, 55.1MB/s]     74%|███████████████████████████▍         | 13.2M/17.9M [00:00<00:00, 68.1MB/s]      0%|                                              | 0.00/17.9M [00:00<?, ?B/s]    100%|█████████████████████████████████████| 17.9M/17.9M [00:00<00:00, 23.1GB/s]
     Loading /home/circleci/mne_data/MNE-fNIRS-motor-data/Participant-1
     Reading 0 ... 23238  =      0.000 ...  2974.464 secs...
 
@@ -1034,7 +1032,7 @@ cortical surface
  .. code-block:: none
 
 
-    <mne.viz._brain._brain.Brain object at 0x7f4e6c45e430>
+    <mne.viz._brain._brain.Brain object at 0x7f1bc8891520>
 
 
 
@@ -1549,9 +1547,9 @@ the tapping, but we do expect 5% or less for the false positive rate.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.389 seconds)
+   **Total running time of the script:** ( 0 minutes  17.756 seconds)
 
-**Estimated memory usage:**  282 MB
+**Estimated memory usage:**  238 MB
 
 
 .. _sphx_glr_download_auto_examples_general_plot_11_hrf_measured.py:

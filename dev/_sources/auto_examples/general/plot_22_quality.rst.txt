@@ -128,7 +128,7 @@ We then convert the data to optical density and plot the raw signal.
 
     Loading /home/circleci/mne_data/MNE-fNIRS-motor-data/Participant-1
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f4dec18cdc0>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f1bcf1695e0>
 
 
 
@@ -241,7 +241,7 @@ channels are now displayed in grey to indicate they are bad.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f4e6c302430>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f1b74326820>
 
 
 
@@ -460,7 +460,7 @@ has been added.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f4ee93191f0>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f1b54275dc0>
 
 
 
@@ -548,7 +548,7 @@ on S2-D4).
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f4e90320550>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f1bcf169550>
 
 
 
@@ -583,7 +583,7 @@ and bad time segments are marked in red.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f4e6c6e49d0>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f1bb4204af0>
 
 
 
@@ -603,7 +603,7 @@ are treated in downstream analysis.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  22.195 seconds)
+   **Total running time of the script:** ( 0 minutes  22.808 seconds)
 
 **Estimated memory usage:**  10 MB
 
