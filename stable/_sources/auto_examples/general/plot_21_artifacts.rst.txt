@@ -89,7 +89,7 @@ and plot these signals.
 
     Loading /home/circleci/mne_data/MNE-fNIRS-motor-data/Participant-1
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fbf0243d670>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f8e39db3ee0>
 
 
 
@@ -143,7 +143,7 @@ seconds to the data.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fbf86a24820>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f8e385871f0>
 
 
 
@@ -178,7 +178,7 @@ for any user-supplied parameters FishburnEtAl2019.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fbe7b334f70>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f8ebc65ff70>
 
 
 
@@ -201,7 +201,7 @@ for fNIRS. NeuroImage,
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.115 seconds)
+   **Total running time of the script:** ( 0 minutes  4.725 seconds)
 
 **Estimated memory usage:**  10 MB
 
