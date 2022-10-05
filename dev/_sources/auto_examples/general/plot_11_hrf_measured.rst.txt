@@ -1032,7 +1032,7 @@ cortical surface
  .. code-block:: none
 
 
-    <mne.viz._brain._brain.Brain object at 0x7f62a2e7bd30>
+    <mne.viz._brain._brain.Brain object at 0x7fd2b45cc430>
 
 
 
@@ -1547,9 +1547,9 @@ the tapping, but we do expect 5% or less for the false positive rate.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.514 seconds)
+   **Total running time of the script:** ( 0 minutes  16.941 seconds)
 
-**Estimated memory usage:**  305 MB
+**Estimated memory usage:**  237 MB
 
 
 .. _sphx_glr_download_auto_examples_general_plot_11_hrf_measured.py:
@@ -1562,7 +1562,7 @@ the tapping, but we do expect 5% or less for the false positive rate.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=notebooks/auto_examples/general/plot_11_hrf_measured.ipynb
+        :target: https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=dev/notebooks/auto_examples/general/plot_11_hrf_measured.ipynb
         :alt: Launch binder
         :width: 150 px
 

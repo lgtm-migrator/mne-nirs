@@ -207,7 +207,7 @@ To achieve this we pick all the channels that are not considered to be short.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f62ff0dd160>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd32d35b160>
 
 
 
@@ -242,7 +242,7 @@ The raw intensity values are then converted to optical density.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f62a2d7d670>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd229f1a940>
 
 
 
@@ -279,7 +279,7 @@ the modified Beer-Lambert law.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f62ff1568b0>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd32cbf18b0>
 
 
 
@@ -540,7 +540,7 @@ approach, and the benefits of the GLM style of analysis
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.373 seconds)
+   **Total running time of the script:** ( 0 minutes  9.145 seconds)
 
 **Estimated memory usage:**  10 MB
 
@@ -555,7 +555,7 @@ approach, and the benefits of the GLM style of analysis
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=notebooks/auto_examples/general/plot_99_bad.ipynb
+        :target: https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=dev/notebooks/auto_examples/general/plot_99_bad.ipynb
         :alt: Launch binder
         :width: 150 px
 

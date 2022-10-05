@@ -267,7 +267,7 @@ and signal annotations.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f63018f7310>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd317147280>
 
 
 
@@ -804,9 +804,9 @@ From here you can use your favorite analysis technique such as
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  41.164 seconds)
+   **Total running time of the script:** ( 0 minutes  39.249 seconds)
 
-**Estimated memory usage:**  177 MB
+**Estimated memory usage:**  169 MB
 
 
 .. _sphx_glr_download_auto_examples_general_plot_06_gowerlabs.py:
@@ -819,7 +819,7 @@ From here you can use your favorite analysis technique such as
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=notebooks/auto_examples/general/plot_06_gowerlabs.ipynb
+        :target: https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=dev/notebooks/auto_examples/general/plot_06_gowerlabs.ipynb
         :alt: Launch binder
         :width: 150 px
 
