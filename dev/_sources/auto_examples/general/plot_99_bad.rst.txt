@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_auto_examples_general_plot_99_bad.py>`
+        :ref:`Go to the end <sphx_glr_download_auto_examples_general_plot_99_bad.py>`
         to download the full example code or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
@@ -207,7 +207,7 @@ To achieve this we pick all the channels that are not considered to be short.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd32d35b160>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f6d28332af0>
 
 
 
@@ -242,7 +242,7 @@ The raw intensity values are then converted to optical density.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd229f1a940>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f6ce81f6ca0>
 
 
 
@@ -279,7 +279,7 @@ the modified Beer-Lambert law.
  .. code-block:: none
 
 
-    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7fd32cbf18b0>
+    <mne_qt_browser._pg_figure.MNEQtBrowser object at 0x7f6ccb794c10>
 
 
 
@@ -540,9 +540,9 @@ approach, and the benefits of the GLM style of analysis
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.145 seconds)
+   **Total running time of the script:** ( 0 minutes  9.198 seconds)
 
-**Estimated memory usage:**  10 MB
+**Estimated memory usage:**  41 MB
 
 
 .. _sphx_glr_download_auto_examples_general_plot_99_bad.py:

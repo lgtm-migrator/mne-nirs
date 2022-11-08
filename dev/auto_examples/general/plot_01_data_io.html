@@ -13,8 +13,8 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
 
   
   <link rel="stylesheet"
@@ -23,6 +23,8 @@
     href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/font-awesome.css" />
@@ -32,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -41,20 +43,19 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/copybutton.js"></script>
-    <script async="async" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-188272121-1"></script>
     <script>
-                    window.ga = window.ga || function () {
-                        (ga.q = ga.q || []).push(arguments) };
-                    ga.l = +new Date;
-                    ga('create', 'UA-188272121-1', 'auto');
-                    ga('set', 'anonymizeIp', true);
-                    ga('send', 'pageview');
-                </script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-188272121-1');
+            </script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/general/plot_01_data_io';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://mne.tools/mne-nirs/dev/_static/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         </script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Example Datasets" href="plot_05_datasets.html" />
@@ -83,7 +84,7 @@
     <div class="search-button__search-container">
       
 <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form>
@@ -93,7 +94,7 @@
   
   <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
-      <span class="fas fa-bars"></span>
+      <span class="fa-solid fa-bars"></span>
   </label>
   <div id="navbar-start">
     
@@ -112,8 +113,9 @@
   
 
   
+    <img src="../../_static/mne_nirs_logo_small.svg" class="logo__image only-light" alt="Logo image">
+    <img src="../../_static/mne_nirs_logo_small.svg" class="logo__image only-dark" alt="Logo image">
   
-    <p class="title logo__title">MNE-NIRS 0.5.dev0 documentation</p>
   
 </a>
     
@@ -131,23 +133,23 @@
     <ul id="navbar-main-elements" class="navbar-nav">
         
                 <li class="nav-item current active">
-                    <a class="nav-link" href="../index.html">
-                        Examples
-                    </a>
+                  <a class="nav-link" href="../index.html">
+                    Examples
+                  </a>
                 </li>
                 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../api.html">
-                        API
-                    </a>
+                  <a class="nav-link" href="../../api.html">
+                    API
+                  </a>
                 </li>
                 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../changelog.html">
-                        Changelog
-                    </a>
+                  <a class="nav-link" href="../../changelog.html">
+                    Changelog
+                  </a>
                 </li>
                 
     </ul>
@@ -159,9 +161,17 @@
     <div id="navbar-end">
       <div class="navbar-end-item navbar-end__search-button-container">
         
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
-  <i class="fas fa-search"></i>
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
+</span>
       </div>
       
       <div class="navbar-end-item">
@@ -185,7 +195,8 @@
           
           
           
-          <a href="https://github.com/mne-tools/mne-nirs" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+          
+          <a href="https://github.com/mne-tools/mne-python" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
             <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
@@ -197,14 +208,14 @@
 
   
   <div class="search-button-container--mobile">
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
-  <i class="fas fa-search"></i>
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
   </div>
 
   
   <label class="sidebar-toggle secondary-toggle" for="__secondary">
-      <span class="fas fa-outdent"></span>
+      <span class="fa-solid fa-outdent"></span>
   </label>
   
 
@@ -231,23 +242,23 @@
     <ul id="navbar-main-elements" class="navbar-nav">
         
                 <li class="nav-item current active">
-                    <a class="nav-link" href="../index.html">
-                        Examples
-                    </a>
+                  <a class="nav-link" href="../index.html">
+                    Examples
+                  </a>
                 </li>
                 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../api.html">
-                        API
-                    </a>
+                  <a class="nav-link" href="../../api.html">
+                    API
+                  </a>
                 </li>
                 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../changelog.html">
-                        Changelog
-                    </a>
+                  <a class="nav-link" href="../../changelog.html">
+                    Changelog
+                  </a>
                 </li>
                 
     </ul>
@@ -260,6 +271,14 @@
     
     
     <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
+</span>
+      </div>
       
       <div class="navbar-end-item">
         <div class="version-switcher__container dropdown">
@@ -282,7 +301,8 @@
           
           
           
-          <a href="https://github.com/mne-tools/mne-nirs" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+          
+          <a href="https://github.com/mne-tools/mne-python" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
             <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
@@ -300,145 +320,39 @@
   </p>
   <div class="bd-toc-item navbar-nav">
     <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="index.html">
-   Analysis examples
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Importing Data From fNIRS Devices
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_05_datasets.html">
-     Example Datasets
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_06_gowerlabs.html">
-     Read Gowerlabs LUMO data
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_10_hrf_simulation.html">
-     GLM Analysis (Simulated)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_11_hrf_measured.html">
-     GLM Analysis (Measured)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_12_group_glm.html">
-     Group Level GLM Analysis
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_13_fir_glm.html">
-     GLM FIR Analysis
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_14_glm_components.html">
-     GLM and Design Matrix Parameters
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_15_waveform.html">
-     Waveform Averaging Analysis
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_16_waveform_group.html">
-     Group Level Waveform Analysis
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_19_snirf.html">
-     SNIRF Support in MNE
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_20_enhance.html">
-     Signal Enhancement Techniques
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_21_artifacts.html">
-     Artifact Correction Techniques
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_22_quality.html">
-     Signal Quality Evaluation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_30_frequency.html">
-     Frequency and Filter Commentary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_40_mayer.html">
-     Mayer Wave Parametrisation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_50_decoding.html">
-     Decoding Analysis
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_60_aux_data.html">
-     Utilising Auxiliary Data
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_70_visualise_brain.html">
-     Utilising Anatomical Information
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_80_save_read_glm.html">
-     Save and load GLM results
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="plot_99_bad.html">
-     Importance of Controls and Parameter Selection
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../migration/index.html">
-   Migrating from other software packages
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../migration/plot_01_homer.html">
-     Migrating from Homer to MNE
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../migration/plot_02_nirstoolbox.html">
-     Migrating from nirs-toolbox to MNE
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Analysis examples</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Importing Data From fNIRS Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_05_datasets.html">Example Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_06_gowerlabs.html">Read Gowerlabs LUMO data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_10_hrf_simulation.html">GLM Analysis (Simulated)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_11_hrf_measured.html">GLM Analysis (Measured)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_12_group_glm.html">Group Level GLM Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_13_fir_glm.html">GLM FIR Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_14_glm_components.html">GLM and Design Matrix Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_15_waveform.html">Waveform Averaging Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_16_waveform_group.html">Group Level Waveform Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_19_snirf.html">SNIRF Support in MNE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_20_enhance.html">Signal Enhancement Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_21_artifacts.html">Artifact Correction Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_22_quality.html">Signal Quality Evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_30_frequency.html">Frequency and Filter Commentary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_40_mayer.html">Mayer Wave Parametrisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_50_decoding.html">Decoding Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_60_aux_data.html">Utilising Auxiliary Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_70_visualise_brain.html">Utilising Anatomical Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_80_save_read_glm.html">Save and load GLM results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_99_bad.html">Importance of Controls and Parameter Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../migration/index.html">Migrating from other software packages</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../migration/plot_01_homer.html">Migrating from Homer to MNE</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../migration/plot_02_nirstoolbox.html">Migrating from nirs-toolbox to MNE</a></li>
+
+
+</ul>
+</li>
 </ul>
 
   </div>
@@ -469,7 +383,7 @@
               
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
-<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-general-plot-01-data-io-py"><span class="std std-ref">here</span></a>
+<p><a class="reference internal" href="#sphx-glr-download-auto-examples-general-plot-01-data-io-py"><span class="std std-ref">Go to the end</span></a>
 to download the full example code or to run this example in your browser via Binder</p>
 </div>
 <section class="sphx-glr-example-title" id="importing-data-from-fnirs-devices">
@@ -523,7 +437,7 @@ wave or haemoglobin data stored in the .snirf format.</p>
 <section id="specifying-the-coordinate-system">
 <h4>Specifying the coordinate system<a class="headerlink" href="#specifying-the-coordinate-system" title="Permalink to this heading">#</a></h4>
 <p>There are a variety of coordinate systems used to specify the location of
-sensors (see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/forward/20_source_alignment.html#tut-source-alignment" title="(in MNE v1.1)"><span>Source alignment and coordinate frames</span></a> for details). Where possible the
+sensors (see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/forward/20_source_alignment.html#tut-source-alignment" title="(in MNE v1.2)"><span>Source alignment and coordinate frames</span></a> for details). Where possible the
 coordinate system will be determined automatically when reading a SNIRF file.
 However, sometimes this is not possible and you must manually specify the
 coordinate frame the optodes are in. This is done using the <code class="docutils literal notranslate"><span class="pre">optode_frame</span></code>
@@ -565,9 +479,9 @@ MNE-Python supports reading data from NIRScout and NIRSport devices.</p>
 <section id="hitachi-csv">
 <span id="import-hitachi"></span><h3>Hitachi (.csv)<a class="headerlink" href="#hitachi-csv" title="Permalink to this heading">#</a></h3>
 <p>Hitachi produce continuous wave fNIRS devices.
-Hitachi fNIRS recordings can be read using <a class="reference external" href="https://mne.tools/stable/generated/mne.io.read_raw_hitachi.html#mne.io.read_raw_hitachi" title="(in MNE v1.1)"><code class="docutils literal notranslate"><span class="pre">mne.io.read_raw_hitachi()</span></code></a>.
+Hitachi fNIRS recordings can be read using <a class="reference external" href="https://mne.tools/stable/generated/mne.io.read_raw_hitachi.html#mne.io.read_raw_hitachi" title="(in MNE v1.2)"><code class="docutils literal notranslate"><span class="pre">mne.io.read_raw_hitachi()</span></code></a>.
 No optode information is stored so you’ll need to set the montage manually,
-see the Notes section of <a class="reference external" href="https://mne.tools/stable/generated/mne.io.read_raw_hitachi.html#mne.io.read_raw_hitachi" title="(in MNE v1.1)"><code class="docutils literal notranslate"><span class="pre">mne.io.read_raw_hitachi()</span></code></a>.</p>
+see the Notes section of <a class="reference external" href="https://mne.tools/stable/generated/mne.io.read_raw_hitachi.html#mne.io.read_raw_hitachi" title="(in MNE v1.2)"><code class="docutils literal notranslate"><span class="pre">mne.io.read_raw_hitachi()</span></code></a>.</p>
 </section>
 </section>
 <section id="frequency-domain-devices">
@@ -617,7 +531,7 @@ create annotations for any triggers.</p>
 You should convert your data to the
 <a class="reference external" href="https://github.com/fNIRS/snirf">SNIRF</a> format using the tools
 provided by the Society for functional Near-Infrared Spectroscopy,
-and then load it using <a class="reference external" href="https://mne.tools/stable/generated/mne.io.read_raw_snirf.html#mne.io.read_raw_snirf" title="(in MNE v1.1)"><code class="docutils literal notranslate"><span class="pre">mne.io.read_raw_snirf()</span></code></a>.</p>
+and then load it using <a class="reference external" href="https://mne.tools/stable/generated/mne.io.read_raw_snirf.html#mne.io.read_raw_snirf" title="(in MNE v1.2)"><code class="docutils literal notranslate"><span class="pre">mne.io.read_raw_snirf()</span></code></a>.</p>
 </div>
 <p>fNIRS measurements may be stored in a non-standardised format that is not
 supported by MNE-Python and cannot be converted easily into SNIRF.
@@ -667,13 +581,13 @@ wavelength.</p>
 </pre></div>
 </div>
 <p>Finally, the data can be converted in to an MNE-Python data structure.
-The metadata above is used to create an <a class="reference external" href="https://mne.tools/stable/generated/mne.Info.html#mne.Info" title="(in MNE v1.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">mne.Info</span></code></a> data structure,
+The metadata above is used to create an <a class="reference external" href="https://mne.tools/stable/generated/mne.Info.html#mne.Info" title="(in MNE v1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">mne.Info</span></code></a> data structure,
 and this is combined with the data to create an MNE-Python
-<a class="reference external" href="https://mne.tools/stable/generated/mne.io.Raw.html#mne.io.Raw" title="(in MNE v1.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Raw</span></code></a> object. For more details on the info structure
-see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/intro/30_info.html#tut-info-class" title="(in MNE v1.1)"><span>The Info data structure</span></a>, and for additional details on how continuous data
-is stored in MNE-Python see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/raw/10_raw_overview.html#tut-raw-class" title="(in MNE v1.1)"><span>The Raw data structure: continuous data</span></a>.
+<a class="reference external" href="https://mne.tools/stable/generated/mne.io.Raw.html#mne.io.Raw" title="(in MNE v1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Raw</span></code></a> object. For more details on the info structure
+see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/intro/30_info.html#tut-info-class" title="(in MNE v1.2)"><span>The Info data structure</span></a>, and for additional details on how continuous data
+is stored in MNE-Python see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/raw/10_raw_overview.html#tut-raw-class" title="(in MNE v1.2)"><span>The Raw data structure: continuous data</span></a>.
 For a more extensive description of how to create MNE-Python data structures
-from raw array data see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/simulation/10_array_objs.html#tut-creating-data-structures" title="(in MNE v1.1)"><span>Creating MNE-Python data structures from scratch</span></a>.</p>
+from raw array data see <a class="reference external" href="https://mne.tools/stable/auto_tutorials/simulation/10_array_objs.html#tut-creating-data-structures" title="(in MNE v1.2)"><span>Creating MNE-Python data structures from scratch</span></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://mne.tools/stable/generated/mne.Info.html#mne.Info" title="mne.Info" class="sphx-glr-backref-module-mne sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">info</span></a> <span class="o">=</span> <a href="https://mne.tools/stable/generated/mne.create_info.html#mne.create_info" title="mne.create_info" class="sphx-glr-backref-module-mne sphx-glr-backref-type-py-function"><span class="n">mne</span><span class="o">.</span><span class="n">create_info</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ch_names</span></a><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ch_names</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ch_types</span></a><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ch_types</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/functions.html#float" title="builtins.float" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sfreq</span></a><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#float" title="builtins.float" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sfreq</span></a><span class="p">)</span>
 <a href="https://mne.tools/stable/generated/mne.io.RawArray.html#mne.io.RawArray" title="mne.io.RawArray" class="sphx-glr-backref-module-mne-io sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">raw</span></a> <span class="o">=</span> <a href="https://mne.tools/stable/generated/mne.io.RawArray.html#mne.io.RawArray" title="mne.io.RawArray" class="sphx-glr-backref-module-mne-io sphx-glr-backref-type-py-class"><span class="n">mne</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">RawArray</span></a><span class="p">(</span><span class="n">data</span><span class="p">,</span> <a href="https://mne.tools/stable/generated/mne.Info.html#mne.Info" title="mne.Info" class="sphx-glr-backref-module-mne sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">info</span></a><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
@@ -694,14 +608,14 @@ MNE-Python provides methods to load standard sensor configurations
 (montages) from some vendors, and this is demonstrated below.
 Some handy tutorials for understanding sensor locations, coordinate systems,
 and how to store and view this information in MNE-Python are:
-<a class="reference external" href="https://mne.tools/stable/auto_tutorials/intro/40_sensor_locations.html#tut-sensor-locations" title="(in MNE v1.1)"><span>Working with sensor locations</span></a>, <a class="reference external" href="https://mne.tools/stable/auto_tutorials/forward/20_source_alignment.html#tut-source-alignment" title="(in MNE v1.1)"><span>Source alignment and coordinate frames</span></a>, and
-<a class="reference external" href="https://mne.tools/stable/auto_examples/visualization/eeg_on_scalp.html#ex-eeg-on-scalp" title="(in MNE v1.1)"><span>Plotting EEG sensors on the scalp</span></a>.</p>
+<a class="reference external" href="https://mne.tools/stable/auto_tutorials/intro/40_sensor_locations.html#tut-sensor-locations" title="(in MNE v1.2)"><span>Working with sensor locations</span></a>, <a class="reference external" href="https://mne.tools/stable/auto_tutorials/forward/20_source_alignment.html#tut-source-alignment" title="(in MNE v1.2)"><span>Source alignment and coordinate frames</span></a>, and
+<a class="reference external" href="https://mne.tools/stable/auto_examples/visualization/eeg_on_scalp.html#ex-eeg-on-scalp" title="(in MNE v1.2)"><span>Plotting EEG sensors on the scalp</span></a>.</p>
 <p>Below is an example of how to load the optode positions for an Artinis
 OctaMon device.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>It is also possible to create a custom montage from a file for
-fNIRS with <a class="reference external" href="https://mne.tools/stable/generated/mne.channels.read_custom_montage.html#mne.channels.read_custom_montage" title="(in MNE v1.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">mne.channels.read_custom_montage()</span></code></a> by setting
+fNIRS with <a class="reference external" href="https://mne.tools/stable/generated/mne.channels.read_custom_montage.html#mne.channels.read_custom_montage" title="(in MNE v1.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">mne.channels.read_custom_montage()</span></code></a> by setting
 <code class="docutils literal notranslate"><span class="pre">coord_frame</span></code> to <code class="docutils literal notranslate"><span class="pre">'mri'</span></code>.</p>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://mne.tools/stable/generated/mne.channels.DigMontage.html#mne.channels.DigMontage" title="mne.channels.DigMontage" class="sphx-glr-backref-module-mne-channels sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">montage</span></a> <span class="o">=</span> <a href="https://mne.tools/stable/generated/mne.channels.make_standard_montage.html#mne.channels.make_standard_montage" title="mne.channels.make_standard_montage" class="sphx-glr-backref-module-mne-channels sphx-glr-backref-type-py-function"><span class="n">mne</span><span class="o">.</span><span class="n">channels</span><span class="o">.</span><span class="n">make_standard_montage</span></a><span class="p">(</span><span class="s1">&#39;artinis-octamon&#39;</span><span class="p">)</span>
@@ -718,7 +632,7 @@ fNIRS with <a class="reference external" href="https://mne.tools/stable/generate
 the location of the sources (red), detectors (black), and channels (white
 lines and orange dots) in a 3D representation.
 The ficiduals are marked in blue, green and red.
-See <a class="reference external" href="https://mne.tools/stable/auto_tutorials/forward/20_source_alignment.html#tut-source-alignment" title="(in MNE v1.1)"><span>Source alignment and coordinate frames</span></a> for more details.</p>
+See <a class="reference external" href="https://mne.tools/stable/auto_tutorials/forward/20_source_alignment.html#tut-source-alignment" title="(in MNE v1.2)"><span>Source alignment and coordinate frames</span></a> for more details.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">subjects_dir</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/os.path.html#os.path.join" title="os.path.join" class="sphx-glr-backref-module-os-path sphx-glr-backref-type-py-function"><span class="n">op</span><span class="o">.</span><span class="n">join</span></a><span class="p">(</span><a href="https://mne.tools/stable/generated/mne.datasets.sample.data_path.html#mne.datasets.sample.data_path" title="mne.datasets.sample.data_path" class="sphx-glr-backref-module-mne-datasets-sample sphx-glr-backref-type-py-function"><span class="n">mne</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">data_path</span></a><span class="p">(),</span> <span class="s1">&#39;subjects&#39;</span><span class="p">)</span>
 <a href="https://mne.tools/stable/generated/mne.datasets.fetch_fsaverage.html#mne.datasets.fetch_fsaverage" title="mne.datasets.fetch_fsaverage" class="sphx-glr-backref-module-mne-datasets sphx-glr-backref-type-py-function"><span class="n">mne</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">fetch_fsaverage</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">subjects_dir</span></a><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">subjects_dir</span></a><span class="p">)</span>
 
@@ -729,8 +643,207 @@ See <a class="reference external" href="https://mne.tools/stable/auto_tutorials/
 <a href="https://mne.tools/stable/generated/mne.viz.Brain.html#mne.viz.Brain.show_view" title="mne.viz.Brain.show_view" class="sphx-glr-backref-module-mne-viz sphx-glr-backref-type-py-method"><span class="n">brain</span><span class="o">.</span><span class="n">show_view</span></a><span class="p">(</span><span class="n">azimuth</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">elevation</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_plot_01_data_io_002.png" srcset="../../_images/sphx_glr_plot_01_data_io_002.png" alt="plot 01 data io" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0 files missing from root.txt in /home/circleci/mne_data/MNE-sample-data/subjects
-0 files missing from bem.txt in /home/circleci/mne_data/MNE-sample-data/subjects/fsaverage
+<img src="../../_images/sphx_glr_plot_01_data_io_002.png" srcset="../../_images/sphx_glr_plot_01_data_io_002.png" alt="plot 01 data io" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Using default location ~/mne_data for sample...
+
+  0%|                                              | 0.00/1.65G [00:00&lt;?, ?B/s]
+  0%|                                     | 4.26M/1.65G [00:00&lt;00:38, 42.6MB/s]
+  1%|▎                                    | 11.8M/1.65G [00:00&lt;00:26, 61.6MB/s]
+  1%|▍                                    | 20.0M/1.65G [00:00&lt;00:22, 71.3MB/s]
+  2%|▋                                    | 28.5M/1.65G [00:00&lt;00:21, 76.6MB/s]
+  2%|▊                                    | 36.8M/1.65G [00:00&lt;00:20, 78.7MB/s]
+  3%|█                                    | 45.0M/1.65G [00:00&lt;00:20, 80.0MB/s]
+  3%|█▏                                   | 54.2M/1.65G [00:00&lt;00:19, 84.0MB/s]
+  4%|█▍                                   | 63.8M/1.65G [00:00&lt;00:18, 87.6MB/s]
+  4%|█▋                                   | 73.4M/1.65G [00:00&lt;00:17, 90.2MB/s]
+  5%|█▊                                   | 83.1M/1.65G [00:01&lt;00:16, 92.5MB/s]
+  6%|██                                   | 92.4M/1.65G [00:01&lt;00:17, 91.6MB/s]
+  6%|██▎                                   | 102M/1.65G [00:01&lt;00:17, 87.1MB/s]
+  7%|██▌                                   | 111M/1.65G [00:01&lt;00:17, 89.9MB/s]
+  7%|██▊                                   | 121M/1.65G [00:01&lt;00:16, 91.4MB/s]
+  8%|██▉                                   | 130M/1.65G [00:01&lt;00:16, 91.6MB/s]
+  8%|███▏                                  | 139M/1.65G [00:01&lt;00:16, 91.6MB/s]
+  9%|███▍                                  | 149M/1.65G [00:01&lt;00:16, 92.4MB/s]
+ 10%|███▋                                  | 158M/1.65G [00:01&lt;00:16, 92.9MB/s]
+ 10%|███▊                                  | 167M/1.65G [00:01&lt;00:15, 93.0MB/s]
+ 11%|████                                  | 177M/1.65G [00:02&lt;00:15, 93.4MB/s]
+ 11%|████▎                                 | 186M/1.65G [00:02&lt;00:15, 92.5MB/s]
+ 12%|████▍                                 | 195M/1.65G [00:02&lt;00:16, 89.9MB/s]
+ 12%|████▋                                 | 204M/1.65G [00:02&lt;00:16, 87.9MB/s]
+ 13%|████▉                                 | 213M/1.65G [00:02&lt;00:16, 86.5MB/s]
+ 13%|█████                                 | 222M/1.65G [00:02&lt;00:16, 86.8MB/s]
+ 14%|█████▎                                | 231M/1.65G [00:02&lt;00:16, 87.8MB/s]
+ 15%|█████▌                                | 240M/1.65G [00:02&lt;00:15, 90.1MB/s]
+ 15%|█████▋                                | 250M/1.65G [00:02&lt;00:15, 90.9MB/s]
+ 16%|█████▉                                | 259M/1.65G [00:02&lt;00:16, 86.1MB/s]
+ 16%|██████▏                               | 268M/1.65G [00:03&lt;00:16, 86.0MB/s]
+ 17%|██████▎                               | 276M/1.65G [00:03&lt;00:16, 85.1MB/s]
+ 17%|██████▌                               | 285M/1.65G [00:03&lt;00:16, 82.6MB/s]
+ 18%|██████▊                               | 294M/1.65G [00:03&lt;00:15, 85.1MB/s]
+ 18%|██████▉                               | 303M/1.65G [00:03&lt;00:15, 86.4MB/s]
+ 19%|███████▏                              | 312M/1.65G [00:03&lt;00:16, 80.1MB/s]
+ 19%|███████▎                              | 320M/1.65G [00:03&lt;00:16, 78.4MB/s]
+ 20%|███████▌                              | 329M/1.65G [00:03&lt;00:15, 83.1MB/s]
+ 20%|███████▊                              | 338M/1.65G [00:03&lt;00:15, 85.9MB/s]
+ 21%|███████▉                              | 348M/1.65G [00:04&lt;00:14, 88.5MB/s]
+ 22%|████████▏                             | 357M/1.65G [00:04&lt;00:14, 87.7MB/s]
+ 22%|████████▍                             | 366M/1.65G [00:04&lt;00:15, 84.0MB/s]
+ 23%|████████▌                             | 375M/1.65G [00:04&lt;00:14, 87.1MB/s]
+ 23%|████████▊                             | 384M/1.65G [00:04&lt;00:14, 88.9MB/s]
+ 24%|█████████                             | 394M/1.65G [00:04&lt;00:13, 90.8MB/s]
+ 24%|█████████▎                            | 403M/1.65G [00:04&lt;00:13, 91.8MB/s]
+ 25%|█████████▍                            | 413M/1.65G [00:04&lt;00:13, 92.1MB/s]
+ 26%|█████████▋                            | 422M/1.65G [00:04&lt;00:13, 92.5MB/s]
+ 26%|█████████▉                            | 431M/1.65G [00:04&lt;00:13, 87.4MB/s]
+ 27%|██████████▏                           | 441M/1.65G [00:05&lt;00:13, 89.0MB/s]
+ 27%|██████████▎                           | 450M/1.65G [00:05&lt;00:13, 90.5MB/s]
+ 28%|██████████▌                           | 459M/1.65G [00:05&lt;00:13, 89.7MB/s]
+ 28%|██████████▊                           | 468M/1.65G [00:05&lt;00:18, 65.7MB/s]
+ 29%|██████████▉                           | 476M/1.65G [00:05&lt;00:17, 68.5MB/s]
+ 29%|███████████                           | 483M/1.65G [00:05&lt;00:16, 70.1MB/s]
+ 30%|███████████▎                          | 492M/1.65G [00:05&lt;00:15, 75.3MB/s]
+ 30%|███████████▌                          | 500M/1.65G [00:05&lt;00:16, 71.2MB/s]
+ 31%|███████████▋                          | 508M/1.65G [00:06&lt;00:15, 72.5MB/s]
+ 31%|███████████▊                          | 516M/1.65G [00:06&lt;00:15, 74.9MB/s]
+ 32%|████████████                          | 524M/1.65G [00:06&lt;00:14, 75.4MB/s]
+ 32%|████████████▏                         | 533M/1.65G [00:06&lt;00:14, 79.2MB/s]
+ 33%|████████████▍                         | 542M/1.65G [00:06&lt;00:13, 82.1MB/s]
+ 33%|████████████▋                         | 550M/1.65G [00:06&lt;00:13, 82.5MB/s]
+ 34%|████████████▊                         | 558M/1.65G [00:06&lt;00:13, 82.9MB/s]
+ 34%|█████████████                         | 568M/1.65G [00:06&lt;00:12, 86.9MB/s]
+ 35%|█████████████▎                        | 577M/1.65G [00:06&lt;00:12, 85.8MB/s]
+ 35%|█████████████▍                        | 586M/1.65G [00:06&lt;00:12, 88.3MB/s]
+ 36%|█████████████▋                        | 596M/1.65G [00:07&lt;00:11, 90.7MB/s]
+ 37%|█████████████▉                        | 605M/1.65G [00:07&lt;00:11, 92.5MB/s]
+ 37%|██████████████▏                       | 615M/1.65G [00:07&lt;00:13, 74.9MB/s]
+ 38%|██████████████▎                       | 623M/1.65G [00:07&lt;00:13, 74.9MB/s]
+ 38%|██████████████▌                       | 631M/1.65G [00:07&lt;00:13, 77.5MB/s]
+ 39%|██████████████▋                       | 639M/1.65G [00:07&lt;00:12, 78.3MB/s]
+ 39%|██████████████▉                       | 649M/1.65G [00:07&lt;00:12, 82.2MB/s]
+ 40%|███████████████                       | 657M/1.65G [00:07&lt;00:12, 81.1MB/s]
+ 40%|███████████████▎                      | 665M/1.65G [00:07&lt;00:12, 81.0MB/s]
+ 41%|███████████████▌                      | 675M/1.65G [00:08&lt;00:11, 84.8MB/s]
+ 41%|███████████████▋                      | 683M/1.65G [00:08&lt;00:11, 85.4MB/s]
+ 42%|███████████████▉                      | 693M/1.65G [00:08&lt;00:10, 87.8MB/s]
+ 42%|████████████████▏                     | 702M/1.65G [00:08&lt;00:10, 89.3MB/s]
+ 43%|████████████████▎                     | 711M/1.65G [00:08&lt;00:10, 86.2MB/s]
+ 44%|████████████████▌                     | 720M/1.65G [00:08&lt;00:10, 87.1MB/s]
+ 44%|████████████████▋                     | 729M/1.65G [00:08&lt;00:10, 85.5MB/s]
+ 45%|████████████████▉                     | 737M/1.65G [00:08&lt;00:10, 85.7MB/s]
+ 45%|█████████████████▏                    | 746M/1.65G [00:08&lt;00:10, 87.7MB/s]
+ 46%|█████████████████▎                    | 755M/1.65G [00:08&lt;00:11, 79.9MB/s]
+ 46%|█████████████████▌                    | 763M/1.65G [00:09&lt;00:11, 76.3MB/s]
+ 47%|█████████████████▋                    | 771M/1.65G [00:09&lt;00:11, 77.1MB/s]
+ 47%|█████████████████▉                    | 779M/1.65G [00:09&lt;00:11, 76.9MB/s]
+ 48%|██████████████████                    | 787M/1.65G [00:09&lt;00:11, 77.5MB/s]
+ 48%|██████████████████▎                   | 795M/1.65G [00:09&lt;00:11, 74.7MB/s]
+ 49%|██████████████████▍                   | 803M/1.65G [00:09&lt;00:11, 76.3MB/s]
+ 49%|██████████████████▋                   | 811M/1.65G [00:09&lt;00:10, 77.9MB/s]
+ 50%|██████████████████▊                   | 819M/1.65G [00:09&lt;00:10, 79.7MB/s]
+ 50%|███████████████████                   | 828M/1.65G [00:09&lt;00:09, 83.3MB/s]
+ 51%|███████████████████▎                  | 837M/1.65G [00:10&lt;00:09, 84.9MB/s]
+ 51%|███████████████████▍                  | 846M/1.65G [00:10&lt;00:09, 85.7MB/s]
+ 52%|███████████████████▋                  | 855M/1.65G [00:10&lt;00:09, 88.1MB/s]
+ 52%|███████████████████▉                  | 865M/1.65G [00:10&lt;00:08, 89.2MB/s]
+ 53%|████████████████████                  | 874M/1.65G [00:10&lt;00:08, 90.7MB/s]
+ 53%|████████████████████▎                 | 884M/1.65G [00:10&lt;00:08, 91.8MB/s]
+ 54%|████████████████████▌                 | 893M/1.65G [00:10&lt;00:08, 92.6MB/s]
+ 55%|████████████████████▋                 | 902M/1.65G [00:10&lt;00:08, 93.0MB/s]
+ 55%|████████████████████▉                 | 912M/1.65G [00:10&lt;00:08, 89.0MB/s]
+ 56%|█████████████████████▏                | 921M/1.65G [00:10&lt;00:08, 89.7MB/s]
+ 56%|█████████████████████▍                | 930M/1.65G [00:11&lt;00:08, 84.6MB/s]
+ 57%|█████████████████████▌                | 938M/1.65G [00:11&lt;00:09, 72.9MB/s]
+ 57%|█████████████████████▋                | 946M/1.65G [00:11&lt;00:09, 72.1MB/s]
+ 58%|█████████████████████▉                | 953M/1.65G [00:11&lt;00:10, 69.8MB/s]
+ 58%|██████████████████████                | 961M/1.65G [00:11&lt;00:09, 72.5MB/s]
+ 59%|██████████████████████▎               | 970M/1.65G [00:11&lt;00:08, 75.9MB/s]
+ 59%|██████████████████████▍               | 978M/1.65G [00:11&lt;00:08, 77.4MB/s]
+ 60%|██████████████████████▋               | 986M/1.65G [00:11&lt;00:08, 78.2MB/s]
+ 60%|██████████████████████▊               | 995M/1.65G [00:11&lt;00:08, 80.5MB/s]
+ 61%|██████████████████████▍              | 1.00G/1.65G [00:12&lt;00:08, 80.3MB/s]
+ 61%|██████████████████████▋              | 1.01G/1.65G [00:12&lt;00:07, 84.6MB/s]
+ 62%|██████████████████████▊              | 1.02G/1.65G [00:12&lt;00:07, 87.2MB/s]
+ 62%|███████████████████████              | 1.03G/1.65G [00:12&lt;00:06, 89.3MB/s]
+ 63%|███████████████████████▎             | 1.04G/1.65G [00:12&lt;00:06, 90.9MB/s]
+ 64%|███████████████████████▍             | 1.05G/1.65G [00:12&lt;00:06, 89.7MB/s]
+ 64%|███████████████████████▋             | 1.06G/1.65G [00:12&lt;00:06, 91.1MB/s]
+ 65%|███████████████████████▉             | 1.07G/1.65G [00:12&lt;00:06, 89.6MB/s]
+ 65%|████████████████████████             | 1.08G/1.65G [00:12&lt;00:06, 91.1MB/s]
+ 66%|████████████████████████▎            | 1.09G/1.65G [00:12&lt;00:06, 89.1MB/s]
+ 66%|████████████████████████▌            | 1.10G/1.65G [00:13&lt;00:06, 87.4MB/s]
+ 67%|████████████████████████▋            | 1.10G/1.65G [00:13&lt;00:06, 84.1MB/s]
+ 67%|████████████████████████▉            | 1.11G/1.65G [00:13&lt;00:06, 80.6MB/s]
+ 68%|█████████████████████████            | 1.12G/1.65G [00:13&lt;00:06, 79.1MB/s]
+ 68%|█████████████████████████▎           | 1.13G/1.65G [00:13&lt;00:06, 79.6MB/s]
+ 69%|█████████████████████████▍           | 1.14G/1.65G [00:13&lt;00:06, 81.2MB/s]
+ 69%|█████████████████████████▋           | 1.15G/1.65G [00:13&lt;00:06, 80.5MB/s]
+ 70%|█████████████████████████▊           | 1.15G/1.65G [00:13&lt;00:06, 81.2MB/s]
+ 70%|██████████████████████████           | 1.16G/1.65G [00:13&lt;00:06, 81.3MB/s]
+ 71%|██████████████████████████▏          | 1.17G/1.65G [00:13&lt;00:05, 82.3MB/s]
+ 71%|██████████████████████████▍          | 1.18G/1.65G [00:14&lt;00:05, 79.8MB/s]
+ 72%|██████████████████████████▌          | 1.19G/1.65G [00:14&lt;00:06, 67.3MB/s]
+ 72%|██████████████████████████▊          | 1.19G/1.65G [00:14&lt;00:06, 71.0MB/s]
+ 73%|██████████████████████████▉          | 1.20G/1.65G [00:14&lt;00:05, 77.1MB/s]
+ 73%|███████████████████████████▏         | 1.21G/1.65G [00:14&lt;00:05, 81.2MB/s]
+ 74%|███████████████████████████▎         | 1.22G/1.65G [00:14&lt;00:05, 80.8MB/s]
+ 74%|███████████████████████████▌         | 1.23G/1.65G [00:14&lt;00:05, 78.1MB/s]
+ 75%|███████████████████████████▋         | 1.24G/1.65G [00:14&lt;00:05, 72.5MB/s]
+ 75%|███████████████████████████▉         | 1.25G/1.65G [00:15&lt;00:05, 68.4MB/s]
+ 76%|████████████████████████████         | 1.25G/1.65G [00:15&lt;00:05, 72.8MB/s]
+ 76%|████████████████████████████▎        | 1.26G/1.65G [00:15&lt;00:04, 78.2MB/s]
+ 77%|████████████████████████████▍        | 1.27G/1.65G [00:15&lt;00:04, 82.1MB/s]
+ 78%|████████████████████████████▋        | 1.28G/1.65G [00:15&lt;00:04, 83.9MB/s]
+ 78%|████████████████████████████▉        | 1.29G/1.65G [00:15&lt;00:04, 85.4MB/s]
+ 79%|█████████████████████████████        | 1.30G/1.65G [00:15&lt;00:04, 86.5MB/s]
+ 79%|█████████████████████████████▎       | 1.31G/1.65G [00:15&lt;00:03, 86.9MB/s]
+ 80%|█████████████████████████████▍       | 1.32G/1.65G [00:15&lt;00:03, 87.6MB/s]
+ 80%|█████████████████████████████▋       | 1.33G/1.65G [00:15&lt;00:04, 73.6MB/s]
+ 81%|█████████████████████████████▊       | 1.33G/1.65G [00:16&lt;00:04, 75.5MB/s]
+ 81%|██████████████████████████████       | 1.34G/1.65G [00:16&lt;00:03, 79.8MB/s]
+ 82%|██████████████████████████████▎      | 1.35G/1.65G [00:16&lt;00:03, 83.4MB/s]
+ 82%|██████████████████████████████▍      | 1.36G/1.65G [00:16&lt;00:03, 86.2MB/s]
+ 83%|██████████████████████████████▋      | 1.37G/1.65G [00:16&lt;00:03, 88.6MB/s]
+ 84%|██████████████████████████████▉      | 1.38G/1.65G [00:16&lt;00:03, 90.1MB/s]
+ 84%|███████████████████████████████      | 1.39G/1.65G [00:16&lt;00:03, 85.7MB/s]
+ 85%|███████████████████████████████▎     | 1.40G/1.65G [00:16&lt;00:02, 87.9MB/s]
+ 85%|███████████████████████████████▌     | 1.41G/1.65G [00:16&lt;00:02, 86.9MB/s]
+ 86%|███████████████████████████████▋     | 1.42G/1.65G [00:17&lt;00:02, 89.3MB/s]
+ 86%|███████████████████████████████▉     | 1.43G/1.65G [00:17&lt;00:02, 80.5MB/s]
+ 87%|████████████████████████████████▏    | 1.44G/1.65G [00:17&lt;00:02, 84.3MB/s]
+ 87%|████████████████████████████████▎    | 1.44G/1.65G [00:17&lt;00:02, 87.5MB/s]
+ 88%|████████████████████████████████▌    | 1.45G/1.65G [00:17&lt;00:02, 88.8MB/s]
+ 89%|████████████████████████████████▊    | 1.46G/1.65G [00:17&lt;00:02, 85.3MB/s]
+ 89%|████████████████████████████████▉    | 1.47G/1.65G [00:17&lt;00:02, 75.6MB/s]
+ 90%|█████████████████████████████████▏   | 1.48G/1.65G [00:17&lt;00:02, 77.3MB/s]
+ 90%|█████████████████████████████████▎   | 1.49G/1.65G [00:17&lt;00:02, 79.4MB/s]
+ 91%|█████████████████████████████████▌   | 1.50G/1.65G [00:18&lt;00:01, 82.9MB/s]
+ 91%|█████████████████████████████████▋   | 1.51G/1.65G [00:18&lt;00:01, 83.7MB/s]
+ 92%|█████████████████████████████████▉   | 1.52G/1.65G [00:18&lt;00:01, 87.5MB/s]
+ 92%|██████████████████████████████████▏  | 1.53G/1.65G [00:18&lt;00:01, 89.8MB/s]
+ 93%|██████████████████████████████████▎  | 1.53G/1.65G [00:18&lt;00:01, 90.0MB/s]
+ 93%|██████████████████████████████████▌  | 1.54G/1.65G [00:18&lt;00:01, 89.7MB/s]
+ 94%|██████████████████████████████████▊  | 1.55G/1.65G [00:18&lt;00:01, 88.5MB/s]
+ 94%|██████████████████████████████████▉  | 1.56G/1.65G [00:18&lt;00:01, 85.1MB/s]
+ 95%|███████████████████████████████████▏ | 1.57G/1.65G [00:18&lt;00:00, 83.3MB/s]
+ 95%|███████████████████████████████████▎ | 1.58G/1.65G [00:18&lt;00:00, 83.4MB/s]
+ 96%|███████████████████████████████████▌ | 1.59G/1.65G [00:19&lt;00:00, 77.7MB/s]
+ 97%|███████████████████████████████████▋ | 1.60G/1.65G [00:19&lt;00:00, 79.8MB/s]
+ 97%|███████████████████████████████████▉ | 1.60G/1.65G [00:19&lt;00:00, 79.5MB/s]
+ 97%|████████████████████████████████████ | 1.61G/1.65G [00:19&lt;00:00, 77.9MB/s]
+ 98%|████████████████████████████████████▏| 1.62G/1.65G [00:19&lt;00:00, 72.0MB/s]
+ 98%|████████████████████████████████████▍| 1.63G/1.65G [00:19&lt;00:00, 70.6MB/s]
+ 99%|████████████████████████████████████▌| 1.63G/1.65G [00:19&lt;00:00, 73.6MB/s]
+ 99%|████████████████████████████████████▊| 1.64G/1.65G [00:19&lt;00:00, 75.4MB/s]
+100%|████████████████████████████████████▉| 1.65G/1.65G [00:19&lt;00:00, 77.7MB/s]
+  0%|                                              | 0.00/1.65G [00:00&lt;?, ?B/s]
+100%|█████████████████████████████████████| 1.65G/1.65G [00:00&lt;00:00, 3.35TB/s]
+16 files missing from root.txt in /home/circleci/mne_data/MNE-sample-data/subjects
+Downloading missing files remotely
+Extracting missing files
+Successfully extracted 16 files
+10 files missing from bem.txt in /home/circleci/mne_data/MNE-sample-data/subjects/fsaverage
+Downloading missing files remotely
+Extracting missing files
+Successfully extracted 10 files
 Using fsaverage-head-dense.fif for head surface.
     1 BEM surfaces found
     Reading a surface...
@@ -739,8 +852,8 @@ Using fsaverage-head-dense.fif for head surface.
 Channel types:: hbo: 8, hbr: 8
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  13.690 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  422 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 1 minutes  10.865 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  413 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-general-plot-01-data-io-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/mne-tools/mne-nirs/gh-pages?filepath=dev/notebooks/auto_examples/general/plot_01_data_io.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -767,7 +880,7 @@ Channel types:: hbo: 8, hbr: 8
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
   <a class='left-prev' id="prev-link" href="index.html" title="previous page">
-      <i class="fas fa-angle-left"></i>
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
           <p class="prev-next-title">Analysis examples</p>
@@ -778,7 +891,7 @@ Channel types:: hbo: 8, hbr: 8
       <p class="prev-next-subtitle">next</p>
       <p class="prev-next-title">Example Datasets</p>
   </div>
-  <i class="fas fa-angle-right"></i>
+  <i class="fa-solid fa-angle-right"></i>
   </a>
 </div>
             </footer>
@@ -792,7 +905,7 @@ Channel types:: hbo: 8, hbr: 8
 <div class="toc-item">
   
 <div class="tocsection onthispage">
-    <i class="fas fa-list"></i> On this page
+    <i class="fa-solid fa-list"></i> On this page
 </div>
 <nav id="bd-toc-nav" class="page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -870,6 +983,11 @@ Channel types:: hbo: 8, hbr: 8
 
 <div class="toc-item">
   
+<div id="searchbox"></div>
+</div>
+
+<div class="toc-item">
+  
 </div>
 
 <div class="toc-item">
@@ -895,7 +1013,7 @@ Channel types:: hbo: 8, hbr: 8
     
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536"></script>
 
   <footer class="bd-footer"><div class="bd-footer__inner container">
   
@@ -903,7 +1021,7 @@ Channel types:: hbo: 8, hbr: 8
     
 <p class="copyright">
 
-    &copy; Copyright 2012–2022, MNE Developers. Last updated &lt;time datetime=&#34;2022-10-05T23:48:06.221392+00:00&#34; class=&#34;localized&#34;&gt;2022-10-05 23:48 UTC&lt;/time&gt;
+    &copy; Copyright 2012–2022, MNE Developers. Last updated &lt;time datetime=&#34;2022-11-08T21:05:57.332094+00:00&#34; class=&#34;localized&#34;&gt;2022-11-08 21:05 UTC&lt;/time&gt;
 &lt;script type=&#34;text/javascript&#34;&gt;$(function () { $(&#34;time.localized&#34;).each(function () { var el = $(this); el.text(new Date(el.attr(&#34;datetime&#34;)).toLocaleString([], {dateStyle: &#34;medium&#34;, timeStyle: &#34;long&#34;})); }); } )&lt;/script&gt;.<br>
 
 </p>
